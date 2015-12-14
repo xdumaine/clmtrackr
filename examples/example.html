@@ -32,6 +32,10 @@
 			<script>
 				var videoInput = document.getElementById('video');
         
+		// Redirect to HTTPS for Github Pages
+		if (window.location.protocol !== "https:"){
+		  window.location.protocol = "https";
+		}
         var ctracker = new clm.tracker();
         ctracker.init(pModel);
         ctracker.start(videoInput);

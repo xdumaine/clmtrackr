@@ -165,6 +165,10 @@
 			<img id="audrey" class="masks" src="./media/audrey.jpg"></img>
 			<img id="cage2" class="masks" src="./media/cage.jpg"></img>
 			<script>
+				// Redirect to HTTPS for Github Pages
+				if (window.location.protocol !== "https:"){
+				  window.location.protocol = "https";
+				}
 				var vid = document.getElementById('videoel');
 				var overlay = document.getElementById('overlay');
 				var overlayCC = overlay.getContext('2d');
